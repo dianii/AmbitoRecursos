@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AmbitoRecursos"
+             x:Class="AmbitoRecursos.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ColorPal">
+                Red  <!--Este es el color principal-->
+            </Color>
+            <Color x:Key="ColorSec">
+                Blue
+                <!--Este es el color principal-->
+            </Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid BackgroundColor="Black">
+        <Grid.RowDefinitions></Grid.RowDefinitions> <!--Fila uno -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>   <!--Columna uno -->
+            <ColumnDefinition></ColumnDefinition>   <!--Columna dos-->
+        </Grid.ColumnDefinitions>
+        <Button Text="Boton Uno" VerticalOptions="Center" BackgroundColor="{StaticResourse ColorPal }"></Button>   <!--Aqui defino el recurso va static y el nombre del recurso-->
+        <Button Text="Boton dos" Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResourse ColorSec }"></Button>
+
+    </Grid>
+
+</ContentPage>
